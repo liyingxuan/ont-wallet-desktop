@@ -1,0 +1,38 @@
+{
+  "name": "ont-wallet-desktop",
+  "version": "1.0.0",
+  "description": "A ont wallet test project.",
+  "author": "liyingxuan <mvp_xuan@163.com>",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package:mac": "electron-packager . Wallet --overwrite --platform=darwin --arch=x64 --out=dist --icon=src/ico/logo.icns",
+    "package:win": "electron-packager . Wallet --overwrite --platform=win32 --arch=ia32 --out=dist --icon=src/ico/logo.ico",
+    "package:linux": "electron-packager . Wallet --overwrite --platform=linux --arch=x64 --out=dist"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "devtron": "^1.4.0",
+    "electron": "~2.0.2",
+    "electron-packager": "^12.1.0",
+    "electron-winstaller": "^2.6.4",
+    "mocha": "^5.2.0",
+    "npm-run-all": "^4.1.3",
+    "request": "^2.87.0",
+    "rimraf": "^2.6.2",
+    "signcode": "^1.0.0",
+    "spectron": "^3.8.0",
+    "standard": "^11.0.1"
+  },
+  "dependencies": {
+    "decimal.js": "^10.0.1",
+    "electron-prebuilt": "^1.4.13",
+    "electron-settings": "^3.2.0",
+    "electron-shortcut-normalizer": "^1.0.0",
+    "glob": "^7.1.2",
+    "highlight.js": "^9.12.0",
+    "npm": "^6.1.0"
+  }
+}
